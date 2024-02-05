@@ -12,6 +12,6 @@ def solution(numheads, numlegs):
     else:
         rabbits = (numlegs - 2*numheads)/2
         chickens = numheads - rabbits
-        print(f"A total number of rabbits: {int(rabbits)}, a total number of chickens: {int(chickens)}")
+        print(f"A total number of rabbits: {int(rabbits)} \nA total number of chickens: {int(chickens)}")
 
 solution(35, 94)

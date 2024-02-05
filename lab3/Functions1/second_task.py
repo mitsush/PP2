@@ -3,7 +3,7 @@
 """
 
 def fahrenheit_to_centigrade():
-    fahrenheit = int(input())
+    fahrenheit = float(input())
     centigrade = (5 / 9) * (fahrenheit - 32)
     print(centigrade)
 

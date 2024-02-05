@@ -3,12 +3,11 @@
 """
 
 def solution(numheads, numlegs):
-    error = "No solution"
     rabbits = 0
     chickens = 0
 
     if(numlegs % 2 != 0 or numheads >= numlegs):
-        print(error)
+        print("No solution")
     else:
         rabbits = (numlegs - 2*numheads)/2
         chickens = numheads - rabbits

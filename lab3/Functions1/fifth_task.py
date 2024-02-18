@@ -1,22 +1,12 @@
 # Write a function that accepts string from user and print all permutations of that string.
 
-def to_string(list):
-    return ''.join(list)
-
-
-def permute(a, l, r):
-    if l == r:
-        print(to_string(a))
+def print_permutations(s, prefix=""):
+    if len(s) == 0:
+        print(prefix)
     else:
-        for i in range(l, r):
-            a[l], a[i] = a[i], a[l]
-            permute(str, l+1, r)
-            a[i], a[l] = a[l], a[i]
+        for i in range(len(s)):
+            rem = s[:i] + s[i+1:]
+            print_permutations(rem, prefix + s[i])
 
-
-str = input()
-r = len(str)    
-a = list(str)
-
-
-permute(a, 0, r)
+user_input = input()
+print_permutations(user_input)

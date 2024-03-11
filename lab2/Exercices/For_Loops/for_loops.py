@@ -15,9 +15,9 @@ for x in range(6):
     print(x)
 
 # Exercise 4
-fruits = ["apple", "banana", "cherry"]
+fruits = ["ap print(x)ple", "banana", "cherry"]
 for x in fruits:
     if x == "banana":
          break
-    print(x)
+   
 

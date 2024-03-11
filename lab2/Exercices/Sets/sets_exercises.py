@@ -18,4 +18,4 @@ fruits.remove("banana")
 
 # Exercise 5
 fruits = {"apple", "banana", "cherry"}
-fruits.discard("banana")
+a = fruits.discard("banana")

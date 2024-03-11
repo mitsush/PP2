@@ -2,9 +2,8 @@
    Create a function to convert grams to ounces. ounces = 28.3495231 * grams
 """
 
-def grams_to_ounces():
-    grams = float(input())
-    ounces = grams * 28.3495231
-    print(ounces)
+def grams_to_ounces(grams):
+    # grams = float(input())
+    retrun grams * 28.3495231
 
-grams_to_ounces()
+print(grams_to_ounces(15))

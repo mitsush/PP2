@@ -9,6 +9,8 @@ def filter_prime(list):
         for j in range(1, i):
             if i%j == 0:
                 c+=1
+            elif c >= 2:
+                break
         if c == 1:
             primes.append(i)
 
